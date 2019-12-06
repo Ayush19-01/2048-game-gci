@@ -24,18 +24,19 @@ class GameGrid(Frame):
         self.init_grid()
         self.init_matrix()
         self.update_grid_cells()
-
         self.mainloop()
 
     def init_grid(self):
-        background = Frame(self, bg="#92877d",width=400, height=400)
+        background = Frame(self, bg="#92877d",width=400, height=500)
         background.grid()
-
+        
+        
+        
         for i in range(4):
             grid_row = []
             for j in range(4):
                 cell=Frame(background, bg="#220047",width=100,height=100)
-                cell.grid(row=i, column=j,padx=7,pady=7)
+                cell.grid(row=i, column=j, padx=6, pady=6
                 t = Label(master=cell, text="",bg="#220047",justify=CENTER, font=FONT, width=5, height=2)
                 t.grid()
                 grid_row.append(t)
