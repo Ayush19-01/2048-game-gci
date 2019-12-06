@@ -35,7 +35,7 @@ class GameGrid(Frame):
             grid_row = []
             for j in range(4):
                 cell=Frame(background, bg="#220047",width=100,height=100)
-                cell.grid(row=i, column=j)
+                cell.grid(row=i, column=j,padx=7,pady=7)
                 t = Label(master=cell, text="",bg="#220047",justify=CENTER, font=FONT, width=5, height=2)
                 t.grid()
                 grid_row.append(t)
